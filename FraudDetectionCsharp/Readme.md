@@ -35,13 +35,13 @@ com Kafka Drops.
 - **Kafka**: Utilizado para mensageria e integrações assíncronas.
 
 
-## Instalação e Configuração
+### Instalação e Configuração
 
 1. Clone o repositório:
 
-   ```
-   git clone https://github.com/seu-usuario/FraudDetectionCsharp.git
-   ```
+```
+git clone https://github.com/seu-usuario/FraudDetectionCsharp.git
+```
 
 2. Navegue até o diretório do projeto:
 
@@ -57,27 +57,11 @@ dotnet restore
 ```
 
 4. Crie o Banco de dados no Microsoft SQL
-
 ```
 SeuBancoDB
 ```
 
-5. Configure o appsettings.json para acesso ao Microsoft SQL e Tópicos do Kafka
-
-```
-"DefaultConnection": "server=DESKTOP-18ELAS; database=FraudDetectionDB;Trusted_Connection=true; TrustServerCertificate=True;"
-```
-
-```
-    "Kafka": {
-      "BootstrapServers": "localhost:9092",
-      "TransactionTopic": "Transaction-Topic",
-      "PaymentTopic": "Payment-Topic",
-      "AccountTopic": "Account-Topic"
-    }
-```
-
-6. Suba as Migrations isso no diretório principal da aplicação:
+5. Suba as Migrations isso no diretório principal da aplicação:
 
 ```
 dotnet ef migrations add InitialCreate
@@ -87,19 +71,19 @@ dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
 
-7. Suba o container do Apache Kafka e a interface do Kafka Drops do docker-compose.yml
+6. Suba o container do Apache Kafka e a interface do Kafka Drops do docker-compose.yml
 
 ```
 docker-compose up -d
 ```
 
-8. Rode o comando para rodar aplicação:
+7. Rode o comando para rodar aplicação:
 
 ```
 dotnet run
 ```
 
-# Descrição do Código `AccountController`
+### Descrição do Código `AccountController`
 
 Este código é uma implementação de um controller em ASP.NET Core que gerencia contas bancárias e detecção de fraudes. 
 Vamos decompor o código e discutir os conceitos, padrões e princípios aplicados:
@@ -156,6 +140,7 @@ e princípios SOLID.
 /api/account
 ```
 
+```
 {
   "accountNumber": "123181981",
   "accountHolderName": "Emerson Amorim",
@@ -191,11 +176,14 @@ e princípios SOLID.
   ],
   "userId": 1
 }
+```
 
 ### Faça uma Requisição Post em Payment no Swagger usando o Json abaixo:
 
 ```
 /api/payment
+```
+
 ```
 {
   "TransactionId": 1,
@@ -206,11 +194,14 @@ e princípios SOLID.
   "currency": "BRL",
   "paymentConfirmationNumber": "CONF123456"
 }
+```
 
 ### Faça uma Requisição Post em Transaction no Swagger usando o Json abaixo:
 
 ```
 /api/transaction
+```
+
 ```
 {
   "userId": 456,
@@ -223,9 +214,10 @@ e princípios SOLID.
   "isApproved": true,
   "status": 1
 }
+```
 
 
-# Descrição do Código `PaymentFraudDetectionRules`
+### Descrição do Código `PaymentFraudDetectionRules`
 
 Este código é uma implementação das regras de detecção de fraudes específicas para pagamentos. Ele é responsável por avaliar se um pagamento 
 é potencialmente fraudulento com base em certos critérios predefinidos. Vamos decompor o código e discutir os conceitos, padrões e princípios 
@@ -268,7 +260,7 @@ Em resumo, `PaymentFraudDetectionRules` é uma implementação bem projetada de 
 Ele segue boas práticas de design, padrões de arquitetura e princípios SOLID, garantindo um código modular, extensível e manutenível.
 
 
-## Descrição do Código `AccountService.cs`
+### Descrição do Código `AccountService.cs`
 
 O código da classe `AccountService`, que é responsável por gerenciar as operações relacionadas às contas. Ela é parte 
 essencial do domínio da aplicação `FraudDetectionCsharp`. A seguir, uma análise detalhada do código com foco em padrões de arquitetura, 
@@ -315,7 +307,7 @@ Essa parte do código é um bom exemplo de como aplicar padrões de arquitetura,
 de desenvolvimento.
 
 
-# Descrição do Código `TransactionRepository.cs`
+### Descrição do Código `TransactionRepository.cs`
 
 O código apresentado refere-se à classe `TransactionRepository`, que é responsável por gerenciar as operações de banco de dados relacionadas 
 às transações. Esta classe é uma peça central na infraestrutura da aplicação `FraudDetectionCsharp`. Vamos abordar detalhadamente o código 
@@ -362,7 +354,7 @@ sejam realizadas de maneira eficaz e eficiente. Além disso, ao seguir os princ�
 extensível e fácil de manter.
 
 
-
+```
 +---------------------+
 |    E = mc^2          |
 |                      |
@@ -372,6 +364,8 @@ extensível e fácil de manter.
 |      luz (3x10^8     |
 |      m/s)            |
 +---------------------+
+
+```
 
 
 
