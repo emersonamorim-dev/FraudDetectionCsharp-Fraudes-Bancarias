@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "WkRpP6NBqgCNqj9LIDcBPFcj21dWU0f0G5Y3fCTzyuQ=",
+  "Source": "FraudDetectionCsharp",
+  "BasePath": "_content/FraudDetectionCsharp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
