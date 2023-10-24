@@ -39,9 +39,9 @@ com Kafka Drops.
 
 1. Clone o repositório:
 
-   ```
-   git clone https://github.com/seu-usuario/FraudDetectionCsharp.git
-   ```
+```
+git clone https://github.com/seu-usuario/FraudDetectionCsharp.git
+```
 
 2. Navegue até o diretório do projeto:
 
@@ -140,6 +140,7 @@ e princípios SOLID.
 /api/account
 ```
 
+```
 {
   "accountNumber": "123181981",
   "accountHolderName": "Emerson Amorim",
@@ -175,11 +176,14 @@ e princípios SOLID.
   ],
   "userId": 1
 }
+```
 
 ### Faça uma Requisição Post em Payment no Swagger usando o Json abaixo:
 
 ```
 /api/payment
+```
+
 ```
 {
   "TransactionId": 1,
@@ -190,11 +194,14 @@ e princípios SOLID.
   "currency": "BRL",
   "paymentConfirmationNumber": "CONF123456"
 }
+```
 
 ### Faça uma Requisição Post em Transaction no Swagger usando o Json abaixo:
 
 ```
 /api/transaction
+```
+
 ```
 {
   "userId": 456,
@@ -207,6 +214,7 @@ e princípios SOLID.
   "isApproved": true,
   "status": 1
 }
+```
 
 
 # Descrição do Código `PaymentFraudDetectionRules`
@@ -346,7 +354,7 @@ sejam realizadas de maneira eficaz e eficiente. Além disso, ao seguir os princ�
 extensível e fácil de manter.
 
 
-
+```
 +---------------------+
 |    E = mc^2          |
 |                      |
@@ -356,6 +364,8 @@ extensível e fácil de manter.
 |      luz (3x10^8     |
 |      m/s)            |
 +---------------------+
+
+```
 
 
 
