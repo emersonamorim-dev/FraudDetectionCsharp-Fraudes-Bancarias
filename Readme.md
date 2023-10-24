@@ -35,7 +35,7 @@ com Kafka Drops.
 - **Kafka**: Utilizado para mensageria e integrações assíncronas.
 
 
-## Instalação e Configuração
+### Instalação e Configuração
 
 1. Clone o repositório:
 
@@ -83,7 +83,7 @@ docker-compose up -d
 dotnet run
 ```
 
-# Descrição do Código `AccountController`
+### Descrição do Código `AccountController`
 
 Este código é uma implementação de um controller em ASP.NET Core que gerencia contas bancárias e detecção de fraudes. 
 Vamos decompor o código e discutir os conceitos, padrões e princípios aplicados:
@@ -217,7 +217,7 @@ e princípios SOLID.
 ```
 
 
-# Descrição do Código `PaymentFraudDetectionRules`
+### Descrição do Código `PaymentFraudDetectionRules`
 
 Este código é uma implementação das regras de detecção de fraudes específicas para pagamentos. Ele é responsável por avaliar se um pagamento 
 é potencialmente fraudulento com base em certos critérios predefinidos. Vamos decompor o código e discutir os conceitos, padrões e princípios 
@@ -260,7 +260,7 @@ Em resumo, `PaymentFraudDetectionRules` é uma implementação bem projetada de 
 Ele segue boas práticas de design, padrões de arquitetura e princípios SOLID, garantindo um código modular, extensível e manutenível.
 
 
-## Descrição do Código `AccountService.cs`
+### Descrição do Código `AccountService.cs`
 
 O código da classe `AccountService`, que é responsável por gerenciar as operações relacionadas às contas. Ela é parte 
 essencial do domínio da aplicação `FraudDetectionCsharp`. A seguir, uma análise detalhada do código com foco em padrões de arquitetura, 
@@ -307,7 +307,7 @@ Essa parte do código é um bom exemplo de como aplicar padrões de arquitetura,
 de desenvolvimento.
 
 
-# Descrição do Código `TransactionRepository.cs`
+### Descrição do Código `TransactionRepository.cs`
 
 O código apresentado refere-se à classe `TransactionRepository`, que é responsável por gerenciar as operações de banco de dados relacionadas 
 às transações. Esta classe é uma peça central na infraestrutura da aplicação `FraudDetectionCsharp`. Vamos abordar detalhadamente o código 
