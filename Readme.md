@@ -147,7 +147,7 @@ e princípios SOLID.
 ### Faça uma Requisição Post em Account no Swagger usando o Json abaixo:
 
 ```
-/api/account
+/api/Account
 ```
 
 ```
@@ -191,7 +191,7 @@ e princípios SOLID.
 ### Faça uma Requisição Post em Payment no Swagger usando o Json abaixo:
 
 ```
-/api/payment
+/api/Payment
 ```
 
 ```
@@ -209,7 +209,7 @@ e princípios SOLID.
 ### Faça uma Requisição Post em Transaction no Swagger usando o Json abaixo:
 
 ```
-/api/transaction
+/api/Transaction
 ```
 
 ```
