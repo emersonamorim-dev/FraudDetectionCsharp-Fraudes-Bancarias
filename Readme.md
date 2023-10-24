@@ -83,6 +83,16 @@ docker-compose up -d
 dotnet run
 ```
 
+### Pacotes que devem ser instalados para usar aplicação no Nuget:
+```
+<PackageReference Include="Confluent.Kafka" Version="2.2.0" />
+<PackageReference Include="JWT" Version="10.1.1" />
+<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.23" />
+<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.12" />
+<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.12">
+<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.12" />
+```
+
 ### Descrição do Código `AccountController`
 
 Este código é uma implementação de um controller em ASP.NET Core que gerencia contas bancárias e detecção de fraudes. 
