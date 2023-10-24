@@ -83,7 +83,7 @@ docker-compose up -d
 dotnet run
 ```
 
-### Pacotes que devem ser instalados para usar aplicação no Nuget:
+### Pacotes que devem ser instalados para usar aplicação, use o Nuget para instalar:
 ```
 <PackageReference Include="Confluent.Kafka" Version="2.2.0" />
 <PackageReference Include="JWT" Version="10.1.1" />
