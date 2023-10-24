@@ -15,11 +15,11 @@ Codificação em Csharp para aplicação de Detecção de Fraudes Bancárias Fra
 
 5. **Exclusão de Contas**: Permite a exclusão de contas, garantindo que todas as transações associadas sejam tratadas adequadamente.
 
-6 **Detecção em Tempo Real**: Descrição sobre como a detecção em tempo real é feita.
+6. **Detecção em Tempo Real**: Descrição sobre como a detecção em tempo real é feita.
 
-7 **Integração com Kafka**: Os tópicos são enviados e processados usando Kafka.
+7. **Integração com Kafka**: Os tópicos são enviados e processados usando Kafka.
 
-8 **Notificações**: Os usuários são notificados em caso de atividades suspeitas.
+8 . **Notificações**: Os usuários são notificados em caso de atividades suspeitas.
 
 ## Tecnologias Utilizadas
 
