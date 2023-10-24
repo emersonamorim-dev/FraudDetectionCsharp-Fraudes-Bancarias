@@ -3,7 +3,7 @@
 Codificação em Csharp para aplicação de Detecção de Fraudes Bancárias `FraudDetectionCsharp` é uma aplicação desenvolvida para detectar 
 Fraudes Bancárias de forma robusta e prevenir fraudes bancárias em tempo real, garantindo a segurança das transações 
 e proporcionando confiança aos usuários e prevenir fraudes bancárias em tempo real. Utilizando técnicas avançadas e regras específicas, 
-a aplicação analisa transações e contas para identificar atividades suspeitas. Implementado com Banco de dados MS SQL e usado do Entity 
+a aplicação analisa transações e contas para identificar atividades suspeitas. Implementado com Banco de dados Microsoft SQL e usando do Entity 
 Framework para subir as Migrations e uso de Apache Kafka para mensageria e integrações assíncronas em fila usando o Swagger para realizar consultas
 nos Endpoints e Docker para subir containers para testar aplicação gravando Tópicos Personalizados por ID para gerenicar os Tópicos 
 com Kafka Drops.
